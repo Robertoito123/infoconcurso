@@ -1,0 +1,91 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #1c1c1c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Menu de Navegação */
+nav {
+    background: #3b82f6;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Efeito Hover nos Links do Menu */
+nav a:hover {
+    background-color: #1e3a8a; /* Azul escuro ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Submenu */
+.submenu {
+    background: #bfdbfe;
+    padding: 10px;
+    text-align: center;
+}
+
+.submenu a {
+    color: #1c1c1c;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* Cards de Conteúdo */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff; /* Fundo branco */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 280px;
+    border: 1px solid #e0e0e0; /* Borda cinza clara */
+}
+
+/* Rodapé */
+footer {
+    background: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
